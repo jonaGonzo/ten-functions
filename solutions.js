@@ -21,3 +21,45 @@
  * concat
  */
 
+function isTrue(input) {
+    return input === true;
+}
+
+function isFalse(input) {
+    return input === false;
+}
+
+function not(input) {
+    return !input;
+}
+
+function addOne(input) {
+    return ++input;
+}
+
+function isEven(input) {
+    let inputFloat =parseFloat(input);
+    return inputFloat %2 === 0;
+}
+
+function isIdentical(input1, input2) {
+    return input1 === input2;
+}
+
+function isEqual(input1, input2) {
+    return input1 == input2;
+}
+
+function or(input1, input2) {
+    return input1 || input2;
+}
+
+function and(input1, input2) {
+    return input1 && input2;
+}
+
+function concat(input1, input2) {
+    let inputString1 = input1.toString();
+    let inputString2 = input2.toString()
+    return inputString1 + inputString2;
+}
